@@ -5,7 +5,7 @@ const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 const pageNum = document.getElementById('pageNum');
 
-// Anime Scroll Top
+// Animate Scroll Top
 function scrollTop(){
   window.scrollTo({
     top: 0,
@@ -13,7 +13,7 @@ function scrollTop(){
   })
 }
 
-// dynamic query
+// Dynamic Query
 let startResult = 0;
 const maxResult = 40;
 let currentPage = 1;
@@ -52,7 +52,7 @@ async function fetchAPI(query, startIndex, page) {
     } else {
       prevBtn.style.display = '';
     }
-    
+
   try {
     const response = await fetch(url);
     if (!response.ok) {
