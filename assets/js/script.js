@@ -21,6 +21,7 @@ let currentPage = 1;
 searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
   currentPage = 1;
+  startResult = 0;
   fetchAPI(searchInput.value, startResult, currentPage);
 })
 prevBtn.addEventListener('click', () => {
